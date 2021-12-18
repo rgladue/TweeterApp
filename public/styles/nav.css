@@ -1,0 +1,67 @@
+nav {
+  height: 110px;
+  width: 100%;
+  background-color: #55027f;
+  color: #fff;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid white;
+}
+ #pg-title {
+  font-family: 'Bungee', sans-serif;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  font-size: 35px;
+  
+}
+#right-span {
+  font-family: "Source Sans Pro", sans-serif;
+  align-self: center;
+  margin-right: 1.5em;
+}
+#arrow {
+  order: 2;
+  margin-left: 75px;
+  margin-top: 5px;
+}
+#arrow:hover {
+  animation-duration: 2s;
+  animation-name: arrow;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes arrow {
+  0% {
+    color: white;
+    padding: 2px;
+  }
+  20% {
+    color:aqua
+  }
+  25% {
+    padding: 4px;
+  }
+  40% {
+    color:lightgreen;
+  }
+  50% {
+    padding: 2px;
+  }
+  60% {
+    color: fuchsia;
+  }
+  75% {
+    padding: 4px;
+  }
+  80% {
+    color: orange;
+  }
+  100% {
+    color:yellow;
+    padding: 2px;
+  }
+}

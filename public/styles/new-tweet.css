@@ -1,0 +1,64 @@
+.new-tweet {
+  width: 100%;
+}
+
+#tweet-btn {
+  background-color: #55027f;
+  font-family: 'Bungee', sans-serif;
+  color: white;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  
+}
+#tweet-text {
+  font-family:'Source Sans Pro', sans-serif;
+  border-bottom: 5px solid rgb(80, 80, 80); 
+  background: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  height: 40px;
+}
+#tweet-btn-box {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', sans-serif;
+  margin-top: 10px;
+}
+#tweet-btn:hover {
+  background-color: rgb(4, 223, 4);
+  transition-duration: 300ms;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 5px;
+  cursor: pointer;
+  animation-name: btn-hover;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes btn-hover {
+  0% {
+    background-color: white;
+  }
+  20% {
+    background-color:aqua
+  }
+
+  40% {
+    background-color:lightgreen;
+  }
+ 
+  60% {
+    background-color: fuchsia;
+  }
+ 
+  80% {
+    background-color: orange;
+  }
+
+  100% {
+    background-color:yellow;
+  }
+}
